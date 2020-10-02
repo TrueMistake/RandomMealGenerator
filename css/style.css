@@ -49,10 +49,12 @@ body{
 .hungry-item__categories{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 .hungry-item__categories-cat{
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 .hungry-item__categories-cat span{
     font-weight: bold;
@@ -88,3 +90,23 @@ body{
 .hungry-item__video{
 
 }
+@media screen and (max-width: 576px){
+    .hungry-item__img{
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .hungry-item__video iframe{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 480px){
+    .hungry-item__img{
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
